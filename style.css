@@ -5,3 +5,7 @@ header{
 .NavItems{
     display: flex;
 }
+
+.SearchBox{
+    display: flex;
+}
