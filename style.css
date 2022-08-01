@@ -1,6 +1,9 @@
 h4{
-    color: white;
-    
+    color: white;  
+}
+
+#burger{
+    display: none;
 }
 
 header{
@@ -11,9 +14,9 @@ header{
 }
 
 .NavItems{
+    width: 400px;
     display: flex;
-    justify-content: space-between;
-    width: 50vw;
+    justify-content: space-between;  
 }
 
 .SearchBox{
@@ -35,6 +38,7 @@ header{
     margin-right: 15px;
     margin-bottom: 15px;
 }
+
 
 :root {
     --varFormBackgroundcolor: rgb(120, 189, 56);
@@ -166,5 +170,13 @@ margin-top: 10px;
         align-self: column;
 
      }
+     .NavItems{
+        display: none;
+    }
+    #burger{
+        display: initial;
+        width: 40px;
+        margin-top: auto;
+        margin-bottom: auto;}
 
 }
