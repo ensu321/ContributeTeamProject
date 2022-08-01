@@ -31,9 +31,66 @@
             <div></div>
         </section>
         <main class="form">
-            <div></div>
-            <div></div>
-            <div></div>
+            <form action="/action_page.php" target="_blank" name="ContactDetails">
+                <div class="Step1">
+                    <Legend>Step 1: Your details</Legend>
+                    <Div class="name">
+                        <Label for="nameLabel" name="nameLabel">Name</Label>
+                        <Input type="text" name="nameName" placeholder="First and last name"></Input>
+                    </Div>
+                    <div class="email">
+                        <label for="emailLabel" name="emailLabel">Email</label>
+                        <input type="email" name="emailLabel" placeholder="example@domain.com"></Input>
+                    </div>
+                    <div class="phone">
+                        <label for="phoneLabel" name="phoneLabel">Phone</label>
+                        <input type="number" name="phoneLabel" placeholder="Eg. +44750000000"></Input>
+                    </div>
+                </div>
+                <div class="Step2">
+                    <Legend>Step 2: Delivery address</Legend>
+                    <div class="adress">
+                        <label for="addressLabel" name="addressLabel">Adress</label>
+                        <textarea type="textarea" name="addressLabel"></textarea>
+                    </div>
+                    <div class="postCode">
+                        <label for="postCodeLabel" name="postCodeLabel">Post code</label>
+                        <input type="text" name="postCodeLabel"></Input>
+                    </div>
+                    <div class="country">
+                        <label for="countryLabel" name="countryLabel">Country</label>
+                        <input type="text" name="countryLabel"></Input>
+                    </div>
+                </div>
+                <div class="step3">
+                    <legend> Step 3: Card Details</legend>
+                    <div class="cardType">
+                        <p>Card type</p>
+                        <input type="radio" id="Visa" name="cardType" value="Visa">
+                        <label for="Visa">Visa</label>
+                        <input type="radio" id="AmEx" name="cardType" value="AmEx">
+                        <label for="AmEx">AmEx</label>
+                        <input type="radio" id="MasterCard" name="cardType" value="MasterCard">
+                        <label for="MasterCard">MasterCard</label>
+                        </Input>
+                    </div>
+                    <div class="cardNumber">
+                        <label for="cardNumberLabel" name="cardNumberLabel">Card number</label>
+                        <input type="number" name="cardNumberLabel"></Input>
+                    </div>
+                    <div class="securityCode">
+                        <label for="securityCodeLabel" name="securityCodeLabel">Security Code</label>
+                        <input type="number" name="securityCodeLabel"></Input>
+                    </div>
+                    <div class="nameOnCard">
+                        <label for="nameOnCardLabel" name="nameOnCardLabel">Name on card</label>
+                        <input type="text" name="nameOnCardLabel" placeholder="Exact name on the Card"></Input>
+                    </div>
+                    <div class="submitbutton">
+                        <button type="submit">BUY IT!</button>
+                    </div>
+                </div>
+            </form>
         </main>
     </div>
 </body>
