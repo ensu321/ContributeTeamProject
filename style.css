@@ -35,3 +35,136 @@ header{
     margin-right: 15px;
     margin-bottom: 15px;
 }
+
+:root {
+    --varFormBackgroundcolor: rgb(120, 189, 56);
+    --varFrmInputBackGroundColor: rgb(166, 224, 89);
+}
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.forma {
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 20px;
+    background-color:var(--varFormBackgroundcolor);
+}
+
+.form .forma legend {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.form .forma {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .forma .Step1, .Step2, .step3 {
+    display: flex;
+    flex-direction: column;;
+    
+}
+
+.form .forma .Step1 .name, .email, .phone {
+    background-color: var(--varFrmInputBackGroundColor);
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.form .forma .Step2 .adress, .postCode, .country {
+    background-color: var(--varFrmInputBackGroundColor);
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.form .forma .Step3 .cardType, .cardNumber, .securityCode, .nameOnCard {
+    background-color: var(--varFrmInputBackGroundColor);
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+.cardType 
+{
+    background-color: var(--varFrmInputBackGroundColor);
+    padding: 5px;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.cardType .p {display: flex;
+    flex-direction: column;
+    height: 40px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.cardType .inputwrap .input {
+    display: inline-block;
+}
+
+.submitbutton  {
+   display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.submitbutton button {
+    height: 30px;
+    width: 80px;
+    color: rgba(245, 245, 245, 0.781);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.486);
+        text-align: center;
+}
+.submitbutton button:hover {
+    background-color: rgba(155, 136, 136, 0.486);
+}
+
+
+@media screen and (min-width: 1136px) {
+    .form .forma .steps {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .forma {
+        display: flex;
+        align-self: column;
+
+     }
+
+}
