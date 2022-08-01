@@ -159,7 +159,7 @@ margin-top: 10px;
 }
 
 
-@media screen and (min-width: 1136px) {
+@media screen and (min-width: 1010px) {
     .form .forma .steps {
         display: flex;
         flex-direction: row;
@@ -170,13 +170,16 @@ margin-top: 10px;
         align-self: column;
 
      }
-     .NavItems{
-        display: none;
     }
-    #burger{
-        display: initial;
-        width: 40px;
-        margin-top: auto;
-        margin-bottom: auto;}
+     @media only screen and (max-width: 750px) {
+        .NavItems{
+            display: none;
+        }
+        #burger{
+            display: initial;
+            width: 40px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
 
-}
