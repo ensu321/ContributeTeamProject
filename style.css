@@ -1,10 +1,11 @@
 h4{
-    color: white;
-    
+    color: white;  
 }
+
 #burger{
     display: none;
 }
+
 header{
     display: flex;
     justify-content:space-between;
@@ -15,8 +16,7 @@ header{
 .NavItems{
     width: 400px;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .SearchBox{
@@ -49,6 +49,4 @@ header{
         margin-top: auto;
         margin-bottom: auto;
     }
-    
-
 }
