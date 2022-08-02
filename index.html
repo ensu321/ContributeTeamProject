@@ -6,22 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>simple form</title>
 </head>
 
 <body>
     <div>
         <header class="header">
+            <img id="burger" src="/burger.png" alt="burger menu icon">
             <div class="NavItems">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <h4>Home</h4>
+                </div>
+                <div>
+                    <h4>Our Products</h4>
+                </div>
+                <div>
+                    <h4>Careers</h4>
+                </div>
+                <div>
+                    <h4>About Us</h4>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                </div>
             </div>
             <div class="SearchBox">
-                <div></div>
-                <div></div>
+                <form><input type="text" id="searchline" name="searchline" placeholder="search here"></form>
+                <div><img id="icon" src="/icon.png" alt="search icon"></div>
             </div>
         </header>
         <section class="stage">
@@ -42,9 +53,78 @@
              </div>
         </section>
         <main class="form">
-            <div></div>
-            <div></div>
-            <div></div>
+            <form class="forma" action="/action_page.php" target="_blank" name="ContactDetails">
+                <div class="steps">
+                    <div class="Step1">
+                        <Legend>Step 1: Your details</Legend>
+                        <Div class="name">
+                            <Label for="nameLabel" name="nameLabel">Name</Label>
+                            <Input type="text" name="nameName" placeholder="First and last name"></Input>
+                        </Div>
+                        <div class="email">
+                            <label for="emailLabel" name="emailLabel">Email</label>
+                            <input type="email" name="emailLabel" placeholder="example@domain.com"></Input>
+                        </div>
+                        <div class="phone">
+                            <label for="phoneLabel" name="phoneLabel">Phone</label>
+                            <input type="number" name="phoneLabel" placeholder="Eg. +44750000000"></Input>
+                        </div>
+                    </div>
+                    <div class="Step2">
+                        <Legend>Step 2: Delivery address</Legend>
+                        <div class="adress">
+                            <label for="addressLabel" name="addressLabel">Address</label>
+                            <textarea style="height: 80px;" type="textarea" name="addressLabel"></textarea>
+                        </div>
+                        <div class="postCode">
+                            <label for="postCodeLabel" name="postCodeLabel">Post code</label>
+                            <input type="text" name="postCodeLabel"></Input>
+                        </div>
+                        <div class="country">
+                            <label for="countryLabel" name="countryLabel">Country</label>
+                            <input type="text" name="countryLabel"></Input>
+                        </div>
+                    </div>
+                    <div class="step3">
+                        <legend> Step 3: Card Details</legend>
+                        <div class="cardType">
+                            <div class="p">
+                                <p>Card type</p>
+                            </div>
+                            <div class="inputwrap">
+                                <div class="input"><input type="radio" id="Visa" name="cardType" value="Visa">
+                                    <label for="Visa">Visa</label>
+                                </div>
+                                <div class="input"><input type="radio" id="AmEx" name="cardType" value="AmEx">
+                                    <label for="AmEx">AmEx</label>
+                                </div>
+                                <div class="input"><input type="radio" id="MasterCard" name="cardType"
+                                        value="MasterCard">
+                                    <label for="MasterCard">MasterCard</label>
+                                    </Input>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cardNumber">
+                            <label for="cardNumberLabel" name="cardNumberLabel">Card number</label>
+                            <input type="number" name="cardNumberLabel"></Input>
+                        </div>
+                        <div class="securityCode">
+                            <label for="securityCodeLabel" name="securityCodeLabel">Security Code</label>
+                            <input type="number" name="securityCodeLabel"></Input>
+                        </div>
+                        <div class="nameOnCard">
+                            <label for="nameOnCardLabel" name="nameOnCardLabel">Name on card</label>
+                            <input type="text" name="nameOnCardLabel" placeholder="Exact name on the Card"></Input>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submitbutton">
+                    <button type="submit">BUY IT!</button>
+                </div>
+            </form>
         </main>
     </div>
 </body>
