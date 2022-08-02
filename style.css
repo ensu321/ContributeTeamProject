@@ -1,0 +1,21 @@
+.stage {
+    padding: 20px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: rgb(242, 194, 117);
+    display: flex;
+  }
+.stage-text{
+    color: white;
+}
+
+.container {
+    width: 33%;
+	height: 100px;
+  }
+
+.dash{
+    background-color: white;
+    height: 20px;
+    width: 200px;
+}
