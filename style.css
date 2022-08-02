@@ -165,8 +165,8 @@ margin-top: 10px;
 }
 
 .submitbutton button {
-    height: 30px;
-    width: 80px;
+    height: 40px;
+    width: 140px;
     color: rgba(245, 245, 245, 0.781);
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.486);
@@ -272,6 +272,10 @@ Lauryno Csss Dalis
     word-wrap: break-word;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
